@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "DepthCrafter"
+version = "0.1.0"
+description = "A framework for depth estimation developed by Tencent."
+authors = [
+    { name = "Tencent"}
+]
+readme = "README.md"
+homepage = "https://github.com/Tencent/DepthCrafter"
+repository = "https://github.com/Tencent/DepthCrafter"
+keywords = ["depth estimation", "computer vision", "machine learning"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+
+[project.dependencies]
+torch
+diffusers
+numpy==1.26.4
+matplotlib==3.8.4
+transformers
+accelerate
+xformers
+mediapy
+fire
+decord
+OpenEXR==3.2.4
